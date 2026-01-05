@@ -65,7 +65,7 @@ postbutton.addEventListener("click", () => {
 
   const post = `${text} - (${formatDate()})`;
 
-  posts.textContent += (posts.textContent ? "\n\n" : "") + post;
+  posts.textContent = post + (posts.textContent ? "\n\n" + posts.textContent : "");
   localStorage.setItem(STORAGE_KEY, posts.textContent);
 
   textarea.value = "";
@@ -77,5 +77,6 @@ const clear = document.getElementById('clear')
 localStorage.removeItem(STORAGE_KEY);
 posts.postContent = "";
 });
+
 
 
