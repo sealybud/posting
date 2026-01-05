@@ -1,0 +1,27 @@
+*{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.postbutton{
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.20s;
+}
+.postbutton:hover{
+    background-color: rgb(98, 96, 96);
+}
+.clear{
+    padding: 17px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.20s;
+}
+.clear:hover{
+    background-color: rgb(98, 96, 96);
+}
